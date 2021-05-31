@@ -6,17 +6,30 @@ int main () {
     
 
     p = &x;         // a
+    // x = 0
+    // p = 1000
 
     x = 5;          // b
+    // x = 5 
+    // p = 1000
+    // *p = 5
 
     *p = 3;         // c
+    // x = 3
+    // p = 1000
 
     x = (int)p;     // d
+    // x = 1000
+    // p = 1000
 
     x = (int)&p;    // e
+    // x = 2000
 
     p = NULL;       // f
+    // x unchanged
+    // p == NULL;
 
     *p = 1;         // g
+    // error !
 
 }
